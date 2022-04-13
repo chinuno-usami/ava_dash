@@ -3,6 +3,9 @@
 独立游戏开发入坑示例
 尚未完成，后面有时间慢慢完善起来
 
+当前完成度：
+https://github.com/chinuno-usami/ava_dash/blob/master/video.mp4?raw=true
+
 # TODO
 - [ ] 播放音乐内存泄露问题
 - [ ] 标题画面
