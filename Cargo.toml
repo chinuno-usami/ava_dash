@@ -1,0 +1,45 @@
+[package]
+name = "ava_dash"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bevy_render = "0.6"
+bevy_loading = "0.2"
+libosu = "0.0.27"
+bevy_asset_loader = "0.9.0"
+
+[dependencies.bevy]
+version = "0.6"
+# 如果有任何一个默认功能是你不想要，请禁用 default-features
+default-features = false
+features = [
+  # 下面是常见的默认功能:
+  # (留下你想要的)
+  "render",
+  "bevy_winit",
+  "bevy_gilrs",
+  "png",
+  "hdr",
+  "x11",
+  "filesystem_watcher",
+  # 下面是一些你可能不感兴趣的功能:
+  # (有需要随意添加)
+  "bmp",
+  "jpeg",
+  "wayland"
+]
+
+[dependencies.bevy_kira_audio]
+version = "0.8"
+# `ogg` format support is enabled by default, disable if you don't want it
+default-features = false
+# enable the features you care about
+features = [
+  "wav",
+  "flac",
+  "mp3",
+  "ogg",
+]
